@@ -7,10 +7,10 @@ The project implements a parser for a simplified bash-like shell.
 It is responsible for analyzing user input and transforming it into a structured data representation ready for execution.
   
 The parser supports:
-•	pipe operators (|)
-•	input and output redirections (<, >, >>, <<)
-•	single and double quotes (', ")
-•	environment variables
+  •	pipe operators (|)
+  •	input and output redirections (<, >, >>, <<)
+  •	single and double quotes (', ")
+  •	environment variables
   
 The parsing process consists of:
 1.	Tokenizing the user input.
