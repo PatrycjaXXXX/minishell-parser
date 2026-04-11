@@ -6,11 +6,11 @@
 #    By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/12 10:38:47 by psmolich          #+#    #+#              #
-#    Updated: 2026/02/16 11:59:06 by psmolich         ###   ########.fr        #
+#    Updated: 2026/04/11 18:06:46 by psmolich         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-.SILENT:
+# .SILENT:
 .PHONY: all clean fclean re
 
 NAME := minishell_parser
@@ -20,9 +20,10 @@ LIBFT := $(LIBFT_DIR)/libft.a
 INC_DIR := inc
 
 SRCS := $(wildcard *.c) \
-		$(wildcard tokenize_line/*.c) \
-		$(wildcard parsing_utils/*.c) \
 		$(wildcard create_pipeline/*.c) \
+		$(wildcard free/*.c) \
+		$(wildcard parsing_utils/*.c) \
+		$(wildcard tokenize_line/*.c)
 
 CC := cc
 CFLAGS := -Wall -Wextra -Werror -I$(LIBFT_DIR) -I$(INC_DIR)
