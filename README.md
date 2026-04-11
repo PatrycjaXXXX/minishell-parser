@@ -1,6 +1,15 @@
 # minishell-parser
 A custom shell parser written in C as part of the Minishell project at 42 Berlin.
 
+<div align="left">
+  <p><b>Action: pipeline with three commands (`cat | grep | wc`)</b></p>
+  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="220px">
+</div>
+
+<div align="left">
+  <p><b>Action: command with multiple redirections</b></p>
+  <img src="./images/redir.png" alt="example use with many redirections" height="220px">
+</div>
 
 <details>
 <summary><b>English</b></summary>
