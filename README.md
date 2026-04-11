@@ -1,20 +1,11 @@
 # minishell-parser
 A custom shell parser written in C as part of the Minishell project at 42 Berlin.
 
-<div align="left">
-  <p><b>Action: pipeline with three commands (`cat | grep | wc`)</b></p>
-  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="220px">
-</div>
-
-<div align="left">
-  <p><b>Action: command with multiple redirections</b></p>
-  <img src="./images/redir.png" alt="example use with many redirections" height="220px">
-</div>
-
 <details>
 <summary><b>English</b></summary>
 <p>The project implements a parser for a simplified bash-like shell.
 It is responsible for analyzing user input and transforming it into a structured data representation ready for execution.</p>
+<p>Together with my project partner, we decided early not to implement the Minishell bonus part. As a result, we chose a simpler parsing strategy based on linked lists instead of a tree-based structure.</p>
 <p>
   The parser supports:
 <ul>
@@ -39,6 +30,7 @@ It is responsible for analyzing user input and transforming it into a structured
 <summary><b>Polish</b></summary>
 <p>Projekt implementuje parser dla uproszczonej powłoki systemowej typu bash-like.
 Odpowiada za analizę wejścia użytkownika oraz przekształcenie go w uporządkowaną strukturę danych gotową do dalszego etapu wykonania.</p>
+<p>Razem z moim partnerem Minishell wcześnie zdecydowaliśmy, że nie będziemy implementować części bonusowej projektu. W efekcie wybraliśmy prostszą strategię parsowania opartą na listach jednokierunkowych zamiast AST.</p>
 <p>
   Parser obsługuje:
 <ul>
@@ -59,6 +51,15 @@ Proces działania obejmuje:
 <p>Celem projektu było zrozumienie mechanizmów analizy leksykalnej i składniowej w kontekście działania powłoki systemowej.</p>
 </details>
 
+<div align="left">
+  <p><b>graphical representation: pipeline with three commands (`cat | grep | wc`)</b></p>
+  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="220px">
+</div>
+
+<div align="left">
+  <p><b>Action: command with multiple redirections</b></p>
+  <img src="./images/redir.png" alt="example use with many redirections" height="220px">
+</div>
 
 
   
