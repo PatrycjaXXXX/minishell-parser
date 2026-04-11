@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 17:48:42 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:36:33 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:38:01 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 int	add_token_back(t_token **tokens, t_token *new_token)
 {

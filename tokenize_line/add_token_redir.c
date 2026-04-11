@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:49:56 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:36:51 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:38:01 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 static char	*redir_token_value(char *line, int *index)
 {

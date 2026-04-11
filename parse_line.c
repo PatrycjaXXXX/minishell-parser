@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 12:40:13 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:36:01 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:35:50 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 t_pipeline	*parse_line(char *line, t_shell shell)
 {

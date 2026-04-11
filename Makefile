@@ -10,9 +10,10 @@
 #                                                                              #
 # **************************************************************************** #
 
+.SILENT:
 .PHONY: all clean fclean re
 
-NAME := minishell
+NAME := minishell_parser
 
 LIBFT_DIR := libft
 LIBFT := $(LIBFT_DIR)/libft.a

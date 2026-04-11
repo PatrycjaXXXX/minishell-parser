@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 12:58:18 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:37:24 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:38:01 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 // S1 and s2 must be allocated.
 // In case of error, both will be freed and NULL returned,

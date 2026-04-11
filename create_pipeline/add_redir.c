@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 19:23:50 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:37:56 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:36:00 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 static int	add_redir_back(t_pipeline *current, t_redirects *new_redir)
 {

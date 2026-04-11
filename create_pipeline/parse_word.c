@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 13:05:31 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:38:26 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:36:08 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 // Parses a single-quoted string and returns the contained word.
 static char	*parse_single_quote(char *line, int *index)

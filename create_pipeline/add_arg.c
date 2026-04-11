@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 19:24:51 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:37:50 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:35:53 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 int	add_arg(t_pipeline *current, t_token token, t_shell shell)
 {

@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 10:53:41 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:38:19 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:35:47 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 // echo lalka | grep la | wc -l > out.txt > out2.txt
 // static t_pipeline	*set_temp_pipeline(void)

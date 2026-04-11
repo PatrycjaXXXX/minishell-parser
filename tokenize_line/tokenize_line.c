@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 18:40:58 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:37:14 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:38:01 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 t_token	*tokenize_line(char *line)
 {

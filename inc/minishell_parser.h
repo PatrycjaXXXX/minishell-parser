@@ -6,7 +6,7 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 14:16:20 by twatson           #+#    #+#             */
-/*   Updated: 2026/02/16 11:55:09 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:32:50 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,19 +82,20 @@ typedef struct s_shell
 	int		last_status;
 }	t_shell;
 
-// FREE.c
+
+// create_pipeline
+int			add_arg(t_pipeline *current, t_token token, t_shell shell);
+int			add_pipe(t_pipeline **current);
+int			add_redir(t_pipeline *current, t_token **token, t_shell shell);
+t_pipeline	*empty_pipeline(void);
+t_pipeline	*create_pipeline_from_tokens(t_token *tokens, t_shell shell);
+char		*parse_word(char *word, t_shell shell, int expand);
+
+// free
 void		free_tokens(t_token *tokens);
 void		free_args(char **args);
 void		free_redirects(t_redirects *redir);
 void		free_pipeline(t_pipeline *pipeline);
-
-// PRINT.c
-void		print_envp(char **envp);
-void		print_tokens(t_token *tokens);
-void		print_pipeline(t_pipeline *pipeline);
-
-// ERROR.c
-void		error_msg(char *message);
 
 // parsing utils
 char		*char_to_str(char c);
@@ -104,25 +105,23 @@ int			is_redir(char c);
 int			is_special(char c);
 char		skip_whitespaces(char *line, int *index);
 
-// parse_line.c
-t_pipeline	*parse_line(char *line, t_shell shell);
-
-// parse_word.c
-char		*parse_word(char *word, t_shell shell, int expand);
-
-// tokenize
-t_token		*tokenize_line(char *line);
+// tokenize_line
 int			add_token_back(t_token **tokens, t_token *new_token);
 int			add_token_pipe(t_token **tokens);
 int			add_token_redir(t_token **tokens, char *line, int *index);
 int			add_token_word(t_token **tokens, char *line, int *index);
 int			check_token_syntax(t_token *tokens);
+t_token		*tokenize_line(char *line);
 
-// create pipeline from tokens
-t_pipeline	*create_pipeline_from_tokens(t_token *tokens, t_shell shell);
-t_pipeline	*empty_pipeline(void);
-int			add_arg(t_pipeline *current, t_token token, t_shell shell);
-int			add_pipe(t_pipeline **current);
-int			add_redir(t_pipeline *current, t_token **token, t_shell shell);
+// debug_print.c
+void		print_envp(char **envp);
+void		print_tokens(t_token *tokens);
+void		print_pipeline(t_pipeline *pipeline);
+
+// error_msg.c
+void		error_msg(char *message);
+
+// parse_line.c
+t_pipeline	*parse_line(char *line, t_shell shell);
 
 #endif

@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 19:21:35 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:37:53 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:35:57 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 int	add_pipe(t_pipeline **current)
 {

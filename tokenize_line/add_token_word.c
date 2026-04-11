@@ -6,11 +6,11 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:52:17 by psmolich          #+#    #+#             */
-/*   Updated: 2026/02/16 11:36:59 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:38:01 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell_parser.h"
 
 static char	*get_quoted_word(char *line, int *index, char quote_type,
 	int *unclosed_quote)
