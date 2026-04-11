@@ -1,6 +1,7 @@
 # minishell-parser
 A custom shell parser written in C as part of the Minishell project at 42 Berlin.
 
+
 <details>
 <summary><b>English</b></summary>
 <p>The project implements a parser for a simplified bash-like shell.
