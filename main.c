@@ -6,7 +6,7 @@
 /*   By: psmolich <psmolich@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 10:53:41 by psmolich          #+#    #+#             */
-/*   Updated: 2026/04/11 17:35:47 by psmolich         ###   ########.fr       */
+/*   Updated: 2026/04/11 17:52:57 by psmolich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,8 @@ int	main(int argc, char **argv, char **envp)
 				print_pipeline(pipeline);
 				free_pipeline(pipeline);
 			}
+			else
+				shell.last_status = 2;
 		}
 		free(line);
 		ft_printf(P "MINIsHELL > " R);
