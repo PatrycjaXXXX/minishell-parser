@@ -1,5 +1,16 @@
 # minishell-parser
-A custom shell parser written in C as part of the Minishell project at 42 Berlin.
+A custom shell parser written in C as part of the Minishell project at 42 Berlin. (project passed on April 10, 2025, with 101%)
+
+<div align="left">
+  <p><b>graphical representation: pipeline with three commands (cat, grep, wc)</b></p>
+  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="320px" style="margin-bottom:40px;">
+</div>
+
+
+<div align="left">
+  <p><b>graphical representation: command with multiple redirections (whitespaces are of course ignored and there can be any number of them)</b></p>
+  <img src="./images/redir.png" alt="example use with many redirections" height="320px" style="margin-bottom:40px;">
+</div>
 
 <details>
 <summary><b>English</b></summary>
@@ -50,16 +61,6 @@ Proces działania obejmuje:
 </p>
 <p>Celem projektu było zrozumienie mechanizmów analizy leksykalnej i składniowej w kontekście działania powłoki systemowej.</p>
 </details>
-
-<div align="left">
-  <p><b>graphical representation: pipeline with three commands (`cat | grep | wc`)</b></p>
-  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="220px">
-</div>
-
-<div align="left">
-  <p><b>Action: command with multiple redirections</b></p>
-  <img src="./images/redir.png" alt="example use with many redirections" height="220px">
-</div>
 
 
   
