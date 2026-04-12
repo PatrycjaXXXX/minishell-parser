@@ -3,13 +3,13 @@ A custom shell parser written in C as part of the Minishell project at 42 Berlin
 
 <div align="left">
   <p><b>graphical representation: pipeline with three commands (cat, grep, wc)</b></p>
-  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="320px" style="margin-bottom:50px;">
+  <img src="./images/catgrepwc.png" alt="example use with three commands: cat, grep and wc" height="320px"><br><br><br>
 </div>
 
 
 <div align="left">
   <p><b>graphical representation: command with multiple redirections (whitespaces are of course ignored and there can be any number of them)</b></p>
-  <img src="./images/redir.png" alt="example use with many redirections" height="320px" style="margin-bottom:50px;">
+  <img src="./images/redir.png" alt="example use with many redirections" height="320px"><br><br><br>
 </div>
 
 <details>
